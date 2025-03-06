@@ -1,4 +1,4 @@
-// re_RDugdJFC_J5F6SLvMBdWN5KVwa7NwwB1B
+// re_eNknk5Gq_N2YkiYE6GtJ1xpwMbff8zu2L
 import { Resend } from "resend";
 import { EmailTemplate } from "@/components/email-template";
 
@@ -9,15 +9,15 @@ export async function POST(req: Request) {
     const dataForm = await req.json();
     try {
       const data = await resend.emails.send({
-        from: "Acme <onboarding@resend.dev>",
-        to: ["rafatarre@gmail.com"],
-        subject: "Tarredev landing",
+        from: 'Acme <onboarding@resend.dev>',
+        to: ['oscargomezluna@gmail.com'],
+        subject: "Ogomez landing",
         react: EmailTemplate({
-          firstName: dataForm.username,
+          firstName: dataForm.userName,
           message: dataForm.message,
           email: dataForm.email,
         }),
-        text: "Tarredev",
+        text: "O.Gomez",
       });
       return Response.json(data);
     } catch (error) {
