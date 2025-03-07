@@ -27,7 +27,7 @@ const Introduction = () => {
                     </div>
                 </div>
                 <div className="mt-9">
-                  <Image src="/profile.jpg" alt="Profile pic" width={500} height={500} />
+                  <Image src="/profile.jpg" alt="Profile pic" className="rounded-md" width={500} height={350} />
                 </div>
                 
             </div>
